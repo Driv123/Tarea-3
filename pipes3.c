@@ -1,3 +1,11 @@
+//Este código en C crea un **pipe** para que un proceso padre y un proceso hijo se comuniquen. 
+//El padre envía un mensaje ingresado por el usuario, y el hijo lo recibe y lo imprime.
+/*
+- Se crea un pipe o tuberia.
+- El padre y el hijo se separan usando fork().
+- El hijo cierra el extremo de escritura, lee el mensaje del padre y lo muestra.
+- El padre cierra el extremo de lectura, pide una cadena al usuario, la envía al hijo, y espera que el hijo termine antes de finalizar. */
+
 #include <stdio.h>
 #include <errno.h>
 #include <unistd.h>
