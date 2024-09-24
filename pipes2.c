@@ -1,9 +1,9 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <sched.h>
+#include <sched.h> //esta liberia faltaba
 
-/* el error era que se nos olvido una libreria porque no sabemos programar, la sched.h especificamentes */
+/* el error era una libreria faltante, sched.h especificamentes */
 
 int main() {
     pid_t rf;
